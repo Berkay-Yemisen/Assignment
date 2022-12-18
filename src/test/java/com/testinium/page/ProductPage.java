@@ -51,21 +51,5 @@ public class ProductPage {
         method.click(By.xpath("//*[@id='product-586888']/div[2]/div[3]/a[4]"));
         logger.info("Ürün silindi");
     }
-/**
-    public void attribute() {
-        String attribute = method.getAttribute(By.cssSelector(".logo-text>a>img"), "title");
-        logger.info("Alınan text:" + attribute);
-        System.out.println("Alınan text:" + attribute);
-        method.waitBySeconds(3);
-    }
-
-    public void addfavorite() {
-        method.findElement(By.cssSelector(".product-list>.product-cr:nth-child(2)>.grid_2.alpha.omega.relative>.hover-menu>.add-to-favorites")).click();**/
-        /**String attribute = method.favorite(By.xpath(".product-list>.product-cr:nth-child(8)>.grid_2.alpha.omega.relative>.hover-menu>.add-to-favorites"),"onclick");
-        logger.info(attribute);
-        method.waitBySeconds(3);
-
-         **/
-    //}
 
 }

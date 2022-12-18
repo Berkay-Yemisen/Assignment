@@ -85,12 +85,6 @@ public class Method {
     }
 
 
-    /*
-    public void scrollWithJavaS(By by){
-        jsdriver.executeScript("arguments[0].scrollIntoView();",findElement(by));
-    }
-    */
-
     public Select getSelecet(By by){
 
         return new Select(findElement(by));
@@ -100,24 +94,5 @@ public class Method {
         getSelecet(by).selectByVisibleText(text);
     }
 
-    public String getAttribute(By by,String attributeName){
-        return findElement(by).getAttribute(attributeName);
-    }
 
-    public String favorite(By by,String attributeName){
-        String text = findElement(by).getAttribute(attributeName);
-        logger.info("text:"+text);
-        return(text.substring(15,21));
-
-    }
-
-
-
-    public String getText(By by){
-        return findElement(by).getText();
-    }
-
-    public String getValue(By by){
-        return jsdriver.executeScript("return arguments[0].value;",findElement(by)).toString();
-    }
 }
